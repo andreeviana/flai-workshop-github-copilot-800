@@ -7,6 +7,7 @@ import Activities from './components/Activities';
 import Leaderboard from './components/Leaderboard';
 import Workouts from './components/Workouts';
 
+
 function Home() {
   return (
     <div className="container mt-4">
