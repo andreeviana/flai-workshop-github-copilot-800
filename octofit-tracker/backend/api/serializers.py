@@ -15,9 +15,18 @@ class TeamSerializer(serializers.ModelSerializer):
 
 
 class ActivitySerializer(serializers.ModelSerializer):
+    user_name = serializers.SerializerMethodField()
+
     class Meta:
         model = Activity
         fields = '__all__'
+
+    def get_user_name(self, obj):
+        try:
+            user = User.objects.get(id=obj.user_id)
+            return user.name
+        except User.DoesNotExist:
+            return 'Unknown User'
 
 
 class LeaderboardSerializer(serializers.ModelSerializer):
