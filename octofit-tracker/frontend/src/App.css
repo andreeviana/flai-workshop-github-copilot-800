@@ -1,0 +1,671 @@
+/* OctoFit Tracker App Styles - Prozis Inspired */
+
+.App {
+  min-height: 100vh;
+  background: #1a1a1a;
+}
+
+/* Navigation Bar - Prozis Style */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #000000 !important;
+  border-bottom: none;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff !important;
+  transition: opacity 0.3s ease;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+  color: #ffffff !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  padding: 8px 16px !important;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: #00D4FF !important;
+}
+
+/* Main Content Container */
+.container {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  color: #e0e0e0;
+}
+
+.container * {
+  color: inherit;
+}
+
+/* Card Styling - Prozis Clean Style */
+.card {
+  border: 1px solid #333333;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  background: #2a2a2a;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.2);
+  border-color: #00D4FF;
+}
+
+.card-header {
+  background: #000000;
+  color: white;
+  font-weight: 700;
+  border-radius: 0 !important;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #00D4FF;
+}
+
+.card-title {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+.card-body {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+/* Table Enhancements - Prozis Style */
+.table-responsive {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: #1f1f1f;
+}
+
+.table {
+  margin-bottom: 0;
+  color: #f5f5f5 !important;
+  --bs-table-bg: #1f1f1f !important;
+  --bs-table-striped-bg: #2a2a2a !important;
+  --bs-table-striped-color: #f5f5f5 !important;
+  --bs-table-hover-bg: #3a3a3a !important;
+  --bs-table-hover-color: #ffffff !important;
+  --bs-table-color: #f5f5f5 !important;
+}
+
+.table tbody {
+  color: #f5f5f5 !important;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 1.2rem 1rem;
+  border-bottom: 2px solid #00D4FF;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #404040;
+  color: #f5f5f5 !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+  color: #f5f5f5 !important;
+}
+
+/* Override Bootstrap table-striped for dark theme */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #1f1f1f !important;
+  color: #f5f5f5 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+
+/* Override Bootstrap table-dark */
+.table-dark {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.table-dark th {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.table-dark td {
+  color: #ffffff !important;
+}
+
+/* Maximum specificity for table text visibility */
+table.table tbody tr td,
+table.table tbody tr th,
+.table tbody tr td,
+.table tbody tr th {
+  color: #f5f5f5 !important;
+  background-color: inherit !important;
+}
+
+.table-hover tbody tr:hover {
+  background: #3a3a3a !important;
+  border-left: 3px solid #00D4FF;
+  color: #ffffff !important;
+}
+
+.table-hover tbody tr:hover > * {
+  background-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  font-weight: 400;
+  color: #f5f5f5 !important;
+  background-color: inherit;
+}
+
+.table th {
+  color: #ffffff !important;
+}
+
+.table tbody td {
+  color: #f5f5f5 !important;
+}
+
+.table td a {
+  color: #00D4FF;
+}
+
+.table td a:hover {
+  color: #66e0ff;
+}
+
+.table .badge {
+  color: #000000 !important;
+}
+
+.table .badge-primary {
+  background: #00D4FF !important;
+  color: #000000 !important;
+}
+
+.table .badge-warning {
+  background: #FFC107 !important;
+  color: #000000 !important;
+}
+
+.table .badge-success {
+  background: #00CC66 !important;
+  color: #ffffff !important;
+}
+
+.table .badge-info {
+  background: #6C757D !important;
+  color: #ffffff !important;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  color: #00D4FF;
+  border-color: #00D4FF;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Jumbotron Enhancement - Prozis Hero Style */
+.jumbotron {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  padding: 4rem 3rem !important;
+}
+
+.jumbotron h1 {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron .lead {
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.jumbotron p {
+  color: #aaaaaa;
+}
+
+.jumbotron hr {
+  border-color: #00D4FF;
+  opacity: 0.3;
+}
+
+/* Override Bootstrap bg-light for dark theme */
+.bg-light {
+  background-color: #2a2a2a !important;
+}
+
+a {
+  color: #00D4FF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #0099CC;
+}
+
+/* Button Enhancements - Prozis Style */
+.btn {
+  border-radius: 4px;
+  padding: 0.875rem 2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  background: #00D4FF;
+  border: none;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background: #0099CC;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+.btn-success {
+  border-radius: 4px;
+  background: #00CC66;
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #00AA55;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 204, 102, 0.3);
+}
+
+.btn-info {
+  border-radius: 4px;
+  background: #6C757D;
+  border: none;
+  color: white;
+}
+
+.btn-info:hover {
+  background: #545B62;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border: 2px solid #00D4FF;
+  color: #00D4FF;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: #00D4FF;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 0.9rem;
+}
+
+/* Badge Styling - Prozis Style */
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-primary {
+  background: #00D4FF;
+  color: #000000;
+}
+
+.badge-success {
+  background: #00CC66;
+  color: white;
+}
+
+.badge-info {
+  background: #6C757D;
+  color: white;
+}
+
+.badge-warning {
+  background: #FFC107;
+  color: #000000;
+}
+
+/* Page Heading - Prozis Style */
+.page-header {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 2rem 0 1rem 0;
+}
+
+.page-header h1,
+.page-header h2 {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.container h1,
+.container h2 {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.card h5 {
+  color: #ffffff;
+}
+
+.display-3 {
+  color: #ffffff;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.display-4 {
+  color: #ffffff !important;
+}
+
+.display-1, .display-2, .display-5, .display-6 {
+  color: #ffffff !important;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #808080;
+}
+
+.empty-state-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.2;
+}
+
+/* Form Inputs - Prozis Style */
+.form-control,
+.form-select {
+  border: 1px solid #404040;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #00D4FF;
+  box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+  background: #333333;
+  color: #ffffff;
+}
+
+/* Section Dividers */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #00D4FF 50%, transparent 100%);
+  margin: 3rem 0;
+}
+
+/* Feature Cards for Homepage */
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover .fs-1 {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Professional List Style */
+.list-group-item {
+  border: 1px solid #404040;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.list-group-item:hover {
+  background: #3a3a3a;
+  border-left: 3px solid #00D4FF;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: 4px;
+  border-left: 4px solid;
+  font-weight: 500;
+  background: #2a2a2a;
+}
+
+.alert-success {
+  border-left-color: #00CC66;
+  background: #1a3d2d;
+  color: #66ffaa;
+}
+
+.alert-info {
+  border-left-color: #00D4FF;
+  background: #1a3d4d;
+  color: #66e0ff;
+}
+
+.alert-warning {
+  border-left-color: #FFC107;
+  background: #4d3d1a;
+  color: #ffd966;
+}
+
+.alert-danger {
+  border-left-color: #DC3545;
+  background: #4d1a1f;
+  color: #ff6b7a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  .card {
+    border-radius: 4px;
+  }
+  
+  .table {
+    font-size: 0.875rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .jumbotron {
+    padding: 2rem 1.5rem !important;
+  }
+}
+
+/* Additional Bootstrap Overrides for Dark Theme */
+.text-muted {
+  color: #999999 !important;
+}
+
+.border {
+  border-color: #404040 !important;
+}
+
+.bg-white {
+  background-color: #2a2a2a !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #808080;
+}
+
+/* Ensure proper contrast for button text */
+.btn-sm {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Force text visibility in all table elements */
+table * {
+  color: inherit;
+}
+
+.table tbody tr td {
+  color: #f5f5f5 !important;
+}
+
+/* Override any remaining light backgrounds */
+.bg-light,
+.table-light {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+
+/* Striped table cell color override */
+.table-striped tbody tr:nth-of-type(odd) td,
+.table-striped tbody tr:nth-of-type(odd) th {
+  color: #f5f5f5 !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) td,
+.table-striped tbody tr:nth-of-type(even) th {
+  color: #f5f5f5 !important;
+}
+
+/* Lead text visibility */
+.lead {
+  color: #e0e0e0 !important;
+}
+
+/* General text visibility overrides */
+p, span, div, td, th, label {
+  color: inherit;
+}
+
+.container p,
+.container span:not(.badge),
+.container div:not(.card):not(.btn) {
+  color: #e0e0e0;
+}
+
+/* Ensure list text is visible */
+ul, ol, li {
+  color: #e0e0e0;
+}
+
+/* Bootstrap utility text color overrides */
+.text-dark {
+  color: #f5f5f5 !important;
+}
+
+.text-secondary {
+  color: #b0b0b0 !important;
+}
